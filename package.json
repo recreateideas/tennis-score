@@ -1,0 +1,48 @@
+{
+  "name": "dius-tennis",
+  "version": "1.0.0",
+  "description": "dius coding challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node ./app/index.js",
+    "dev": "nodemon ./app/index.js",
+    "cover": "jest --coverage",
+    "lint": "./node_modules/.bin/eslint .",
+    "precommit": "npm run lint",
+    "prepush": "npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/recreateideas/tennis-score.git"
+  },
+  "keywords": [
+    "tennis",
+    "coding",
+    "challenge"
+  ],
+  "author": "Claudio De Angelis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/recreateideas/tennis-score/issues"
+  },
+  "homepage": "https://github.com/recreateideas/tennis-score#readme",
+  "jest": {
+    "verbose": true,
+    "collectCoverageFrom": [
+      "app/**/*.js",
+      "!app/**/index.js"
+    ]
+  },
+  "engines": {
+    "node": "10.16.0"
+  },
+  "devDependencies": {
+    "eslint": "6.5.1",
+    "eslint-config-airbnb-base": "14.0.0",
+    "eslint-plugin-import": "2.18.2",
+    "husky": "3.0.9",
+    "jest": "24.9.0",
+    "nodemon": "1.19.3"
+  }
+}
